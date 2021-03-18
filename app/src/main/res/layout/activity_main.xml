@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="주소를 입력하세요"
+        android:inputType="text"
+        android:imeOptions="actionDone"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="좌표검색"
+        android:onClick="clickbtn"/>
+
+    <EditText
+        android:id="@+id/et_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="위도를 입력하세요"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_marginTop="24dp"
+        android:imeOptions="actionNext"/>
+
+    <EditText
+        android:id="@+id/et_lng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="경도를 입력하세요"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:imeOptions="actionSearch"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="주소 검색"
+        android:onClick="clickbtn2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFF8800"
+        android:text="show map"
+        android:onClick="clickshowmap"/>
+
+</LinearLayout>
